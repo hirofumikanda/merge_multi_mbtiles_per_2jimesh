@@ -77,8 +77,8 @@ for MESH in "${MESH_LIST[@]}"; do
 
     MESH1_CODE="${MESH:0:4}"   # 5339
     MESH2="${MESH:4:2}"        # 11
-    X="${MESH2:0:1}"
-    Y="${MESH2:1:1}"
+    Y="${MESH2:0:1}"
+    X="${MESH2:1:1}"
 
     # 上2桁・下2桁
     MESH1_NLAT=$(( MESH1_CODE / 100 ))   # N1 = 53
