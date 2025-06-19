@@ -89,8 +89,8 @@ for MESH in "${MESH_LIST[@]}"; do
     ORIGIN_LAT=$(python3 -c "print($MESH1_NLAT / 1.5)")        # 北緯
 
     # 2次メッシュのサイズ
-    DX=0.25
-    DY=0.16666666666666666
+    DX=1/8
+    DY=1/12
 
     # bbox 計算
     read MIN_LON <<< $(python3 -c "print($ORIGIN_LON + ($X - 1) * $DX)")
